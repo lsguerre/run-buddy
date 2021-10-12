@@ -17,14 +17,14 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     background-image: url("../run-buddy/assets/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     background-position: 80%;
 }
@@ -83,7 +83,6 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: flex; 
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -120,13 +119,14 @@ section {
 .hero {
     background-image: url("../run-buddy/assets/hero-bg.jpg"); 
     background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
 }
-/* hero style end*/ 
+
 
 .hero-form {
     border: solid 3px #024e76;
@@ -202,6 +202,7 @@ h3 {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .intro p {
@@ -256,14 +257,15 @@ h3 {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
+    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.step:not(:last-child) {
-    border-bottom: 1px solid #39a6b2;
+.step:last-child {
+    border-bottom: none;
 }
 
 .step-info {
